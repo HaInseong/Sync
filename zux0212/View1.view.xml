@@ -1,0 +1,41 @@
+<mvc:View   controllerName="sync5.zux0212.controller.View1"
+            xmlns:mvc="sap.ui.core.mvc" 
+            displayBlock="true"
+            xmlns="sap.m"
+            xmlns:core="sap.ui.core"
+>
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <!-- ComboBox 1 -->
+            <!-- <ComboBox id="cbSkill" selectedKey="{/skillId}" 
+                    items="{/aSkill}" selectionChange="onSelect">
+                <items>
+                    <core:Item key="{skillId}" text="{skillName}" />
+                </items>
+            </ComboBox> -->
+
+
+            <!-- ComboBox 2 -->
+            <ComboBox id="cbSkill" 
+                    items="{/data}" selectionChange="onSelect">
+                <items>
+                    <core:Item key="{department}" text="{department}" />
+                    
+                </items>
+            </ComboBox>
+
+            <List id="idList" items="{employees}">
+                <items>
+                    <StandardListItem title="{name}" />
+                </items>
+            </List>
+
+            
+            <!-- <List items="{/aSkill}">
+                <items>
+                    <StandardListItem title="{skillId}" description="SAPUI5" />
+                </items>
+            </List> -->
+        </content>
+    </Page>
+</mvc:View>

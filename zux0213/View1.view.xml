@@ -1,0 +1,23 @@
+<mvc:View   controllerName="sync5.zux0213.controller.View1"
+            xmlns:mvc="sap.ui.core.mvc" 
+            displayBlock="true"
+            xmlns="sap.m"
+            xmlns:core="sap.ui.core"
+>
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <ComboBox id = "cbTeam" items = "{/teamList}" selectionChange="onSelect">
+                <items>
+                    <core:Item key="{teamNo}" text="{teamName}" />
+                </items>
+            </ComboBox>
+
+            <!-- items = "{/t01List}" 이 부분을 동적으로 처리하는 방법을 모르겠다. -->
+            <List id="idList" items = "{/t01List}">
+                <items>
+                    <StandardListItem title="{sapId}" description="{memberName}"></StandardListItem>
+                </items>
+            </List>
+        </content>
+    </Page>
+</mvc:View>

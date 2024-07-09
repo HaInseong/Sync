@@ -1,0 +1,26 @@
+<mvc:View   xmlns:layout="sap.ui.layout"   
+            controllerName="sync5.zux0211.controller.View1"
+            xmlns:mvc="sap.ui.core.mvc" 
+            displayBlock="true"
+            xmlns="sap.m"
+>
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <!-- <List >
+                <items>
+                    <StandardListItem title="S01" description="SAPUI5"></StandardListItem>
+                    <StandardListItem title="S02" description="ABAP"></StandardListItem>
+                </items>
+            </List> -->
+          
+            <layout:HorizontalLayout>
+                <Label text="Skill"></Label>
+                <Input id="inpTech01" value="{/oSkill/tech01}" enabled="{/oSkill/readOnly}"></Input>
+                <Input id="inpTech02" value="{/oSkill/tech02}" enabled="{/oSkill/readOnly}"></Input>
+                <Button text="Click" press="onClick"></Button>
+                <Button text="Get Model Data" press="onClick2"></Button>
+            </layout:HorizontalLayout>
+    
+        </content>
+    </Page>
+</mvc:View>

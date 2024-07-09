@@ -1,0 +1,68 @@
+<mvc:View   controllerName="sync5.zux02ex12.controller.View1"
+            xmlns:mvc="sap.ui.core.mvc" 
+            displayBlock="true"
+            xmlns="sap.m"
+            xmlns:core="sap.ui.core"
+>
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Label text="Student"></Label>
+            <!-- <ComboBox items="{/student}" selectionChange="onSelect"> -->
+            <ComboBox id="comboBox" items="{/student}">
+                <items>
+                    <core:Item key="{Key}" text="{Key} {Text}"></core:Item>
+                </items>        
+            </ComboBox>
+            <Button text="Search" press="onSearch"></Button>
+
+
+            <!-- Panel 1번 방법 -->
+            <Panel headerText="Student Info" >
+                <content>
+                    <Label text="Personal Number"></Label>
+                    <Input value="{/student/0/Key}" editable="false" />
+                    <Label text="Name"></Label>
+                    <Input value="{/student/0/Text}" editable="false" />
+                    <Label text="Leader"></Label>
+                    <Input value="{/student/0/Leader}" editable="false" />
+                    <Label text="Gender"></Label>
+                    <Input value="{/student/0/Gender}" editable="false" />
+                </content>
+            </Panel>
+
+            <!-- Panel 2번 방법 -->
+            <Panel binding="{/student/0}">
+                <content>
+                    <Label text="Personal Number" />
+                    <Input value="{Key}" editable="false" />
+                    <Label text="Name"></Label>
+                    <Input value="{Text}" editable="false" />
+                    <Label text="Leader"></Label>
+                    <Input value="{Leader}" editable="false" />
+                    <Label text="Gender"></Label>
+                    <Input value="{Gender}" editable="false" />
+                </content>
+            </Panel>
+            <!-- 버튼 등의 Event시에 bindElement 적용됨 -->
+            <Panel id="panelStudentInfo">
+                <content>
+                    <Label text="Personal Number" />
+                    <Input value="{Key}" editable="false" />
+                    <Label text="Name"></Label>
+                    <Input value="{Text}" editable="false" />
+                    <Label text="Leader"></Label>
+                    <Input value="{Leader}" editable="false" />
+                    <Label text="Gender"></Label>
+                    <Input value="{Gender}" editable="false" />
+                </content>
+            </Panel>
+
+
+             <!-- <List items="{/student}" id="idList">
+                <items>
+                    <StandardListItem title="{Key}" description="{Text}"></StandardListItem>
+                </items>
+            </List> -->
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,31 @@
+<mvc:View   controllerName="sync5.zux0215.controller.View1"
+            xmlns:mvc="sap.ui.core.mvc" 
+            displayBlock="true"
+            xmlns="sap.m"
+            xmlns:core="sap.ui.core"
+>
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <!-- <Table>은 모바일용, xmlns:t=sap.ui.table은 데스크탑용 -->
+            <Table items="{/stdSet}"> 
+                <columns>
+                    <Column><header><Text text="Student No" /></header></Column>
+                    <Column><header><Text text="Name" /></header></Column>
+                    <Column><header><Text text="Leader" /></header></Column>
+                    <Column><header><Text text="Gender" /></header></Column>
+                </columns>
+                
+                <items>
+                    <ColumnListItem press="onItemClick" type="Active">
+                        <cells>
+                            <Text text="{StudentNo}"></Text>
+                            <Text text="{Name}"></Text>
+                            <Text text="{Leader}"></Text>
+                            <Text text="{Gender}"></Text>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

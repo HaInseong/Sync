@@ -1,0 +1,27 @@
+<mvc:View   controllerName="sync5.zux0214.controller.View1"
+            xmlns:mvc="sap.ui.core.mvc" 
+            displayBlock="true"
+            xmlns="sap.m"
+            xmlns:core="sap.ui.core"     
+>
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Label text="Skill"></Label>
+            <ComboBox id="cbSkill" items="{/skillList}" selectionChange="onSelect">
+            <!-- <ComboBox id="cbSkill" items="{/skillList}"> -->
+                <items>
+                    <!-- key 속성은 기본적으로 있어야한다.  -->
+                    <core:Item key="{sId}" text="{sName}" />
+                </items>
+            </ComboBox>
+            <!-- <Button text="Search" press="onSearch"></Button> -->
+
+            <!-- <List items="{/skillList/2/empList}" > 절대경로와 상대경로 -->
+            <List items="{empList}" id="idList">
+                <items>
+                    <StandardListItem title="{Pernr}" description="{Ename}"></StandardListItem>
+                </items>
+            </List>
+        </content>
+    </Page>
+</mvc:View>
