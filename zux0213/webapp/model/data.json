@@ -1,0 +1,44 @@
+{ 
+	"teamList": [ 
+		{ "teamNo": "T01", "teamName": "1조" },
+		{ "teamNo": "T02", "teamName": "2조" },
+		{ "teamNo": "T03", "teamName": "3조" },
+		{ "teamNo": "T04", "teamName": "4조" },
+		{ "teamNo": "T05", "teamName": "5조" }
+	],
+	"t01List": [
+		{ "sapId":"KDT-A-01", "memberName": "김홍비", "leader":"부조장" },
+		{ "sapId":"KDT-A-02", "memberName": "하인성", "leader":"" },
+		{ "sapId":"KDT-A-03", "memberName": "목경민", "leader":"" },
+		{ "sapId":"KDT-A-04", "memberName": "강현서", "leader":"조장" },
+		{ "sapId":"KDT-A-05", "memberName": "형유빈", "leader":"" }
+	],
+	"t02List": [
+		{ "sapId":"KDT-A-06", "memberName": "전유림", "leader":"" },
+		{ "sapId":"KDT-A-07", "memberName": "김상용", "leader":"" },
+		{ "sapId":"KDT-A-08", "memberName": "박재현", "leader":"조장" },
+		{ "sapId":"KDT-A-09", "memberName": "한승연", "leader":"부조장" },
+		{ "sapId":"KDT-A-10", "memberName": "조혜진", "leader":"" }
+	],
+	"t03List": [
+		{ "sapId":"KDT-A-11", "memberName": "김기우", "leader":"조장" },
+		{ "sapId":"KDT-A-12", "memberName": "조우석", "leader":"" },
+		{ "sapId":"KDT-A-13", "memberName": "최지희", "leader":"" },
+		{ "sapId":"KDT-A-14", "memberName": "이다은", "leader":"부조장" },
+		{ "sapId":"KDT-A-15", "memberName": "김도연", "leader":"" }
+	],
+	"t04List": [
+		{ "sapId":"KDT-A-16", "memberName": "최유진", "leader":"" },
+		{ "sapId":"KDT-A-17", "memberName": "두아연", "leader":"" },
+		{ "sapId":"KDT-A-18", "memberName": "정효진", "leader":"" },
+		{ "sapId":"KDT-A-19", "memberName": "송지환", "leader":"부조장" },
+		{ "sapId":"KDT-A-20", "memberName": "정성재", "leader":"조장" }
+	],
+	"t05List": [
+		{ "sapId":"KDT-A-21", "memberName": "박하영", "leader":"" },
+		{ "sapId":"KDT-A-22", "memberName": "진승원", "leader":"" },
+		{ "sapId":"KDT-A-23", "memberName": "조영진", "leader":"조장" },
+		{ "sapId":"KDT-A-24", "memberName": "방현지", "leader":"부조장" },
+		{ "sapId":"KDT-A-25", "memberName": "마하영", "leader":"" }
+	]
+}

@@ -1,0 +1,20 @@
+<mvc:View   controllerName="sync5.zux0205.controller.View1"
+            xmlns:mvc="sap.ui.core.mvc" 
+            displayBlock="true"
+            xmlns="sap.m"    
+            xmlns:core="sap.ui.core"
+>
+
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Label text="Main" ></Label>
+            <Input id="idMain" value="Main"></Input>
+            <Button text="Main" press="onMain"></Button>
+            <VBox >
+                <core:Fragment id="idInfoView" fragmentName="sync5.zux0205.view.Info" type="XML"/>
+                <!-- 작성한 Fragment파일을 가져와서 출력한다. -->
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
+<!-- ★ Fragment에 id를 주면 구분자가 있기 때문에 view파일과 fragment의 id가 같아도 에러가 나지 않는다. -->

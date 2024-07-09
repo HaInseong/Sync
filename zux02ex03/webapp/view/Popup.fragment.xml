@@ -1,0 +1,31 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+>
+
+    <Dialog id="idPopup" title="Special Info" titleAlignment="Center">
+        <f:SimpleForm> 
+            <f:title><core:Title text="SAP Skill"></core:Title></f:title>
+            <f:content> 
+                <core:Title text="Technical"></core:Title>
+                <Label text="Skill Name"></Label>
+                <Input value="{/tech01}" />
+                <Input value="{/tech02}" />
+                <Input value="{/tech03}" />
+            </f:content>
+            <f:content>
+                <core:Title text="Module"></core:Title>
+                <Label text="Module Name "></Label>
+                <Input value="{/tech04}" />
+                <Input value="{/tech05}" />
+            </f:content>      
+        </f:SimpleForm> 
+ 
+        <buttons>
+            <Button text="Close" press="onClose"></Button>
+        </buttons>        
+    </Dialog>
+
+</core:FragmentDefinition>

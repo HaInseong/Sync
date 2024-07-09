@@ -1,0 +1,166 @@
+<mvc:View   controllerName="sync5.zux0204.controller.View1"
+            xmlns:mvc="sap.ui.core.mvc" 
+            displayBlock="true"
+            xmlns="sap.m"
+            xmlns:l="sap.ui.layout"
+            xmlns:f="sap.ui.layout.form"
+            xmlns:core="sap.ui.core"
+>
+    <Page id="page" title="{i18n>title}">
+    <!-- content 태그 안에서는 Panel, f:SimpleForm, f:Form, l:Grid, l:HorizontalLayou 등을 자유롭게 사용 가능하다. -->
+        <content>
+        <!-- 패널을 쓰면 아래로 컨텐트 보이기, 감추기 기능을 쓸 수 있다. -->
+            <Panel headerText="Header Text" expanded="true" expandable="true" >
+                <headerToolbar>
+                    <Toolbar>
+                        <content>
+                        <!-- Toolbar에서 Title을 주면 패널의 headerText를 덮어쓴다. -->
+                            <Title text="Condition"></Title>
+                            <ToolbarSpacer ></ToolbarSpacer>
+                            <Button text="Search" icon="sap-icon://accelerated" press="onSearch"></Button>
+                        </content>
+                    </Toolbar>
+                </headerToolbar>
+                
+                <content>
+                    <Label text="Name"></Label>
+                    <Input value="Kang SK" />
+                </content>
+            </Panel>
+
+
+<!-- SimpleForm은 <f:layout> <f:ResponsiveGridLayout ></f:ResponsiveGridLayout> </f:layout> 레이아웃 자동 적용 -->
+            <f:SimpleForm> 
+                <f:title><core:Title text="Form Title"></core:Title></f:title>
+
+                <f:content>
+                    <core:Title text="Container1"></core:Title>
+                        <Label text="Name"></Label>
+                        <Input value="Kang" />
+                        <Input value="SK" />
+
+                    <core:Title text="Container2"> </core:Title>
+                        <Label text="Email"></Label>
+                        <Input value="gkdlstjd1020@naver.com" />
+                        
+                </f:content>
+            </f:SimpleForm>
+
+<!-- f:Form 형식 -->
+            <f:Form>
+                <f:title> <core:Title text="Form Title"> </core:Title> </f:title>
+
+                <f:layout> <f:ResponsiveGridLayout ></f:ResponsiveGridLayout> </f:layout>
+
+                <f:formContainers>
+                    <f:FormContainer> 
+                        <f:title><core:Title text="Container Title"></core:Title></f:title>
+                        
+                        <f:formElements>
+                            <f:FormElement>
+                                <f:label><Label text="Name"></Label></f:label>
+                                <f:fields>
+                                    <Input value="Kang"></Input>
+                                    <Input value="SK"></Input>
+                                </f:fields>
+                            </f:FormElement>
+                        </f:formElements>
+                    </f:FormContainer>
+
+                    <f:FormContainer> 
+                        <f:title><core:Title text="Container Title2"></core:Title></f:title>
+                        <f:formElements>
+                            <f:FormElement>
+                                <f:label><Label text="Name"></Label></f:label>
+                                <f:fields>
+                                    <Input value="Kang"></Input>
+                                    <Input value="SK"></Input>
+                                </f:fields>
+                            </f:FormElement>
+                        </f:formElements>
+                    </f:FormContainer>
+
+                    <f:FormContainer> 
+                        <f:title><core:Title text="Container Title3"></core:Title></f:title>
+                        <f:formElements>
+                            <f:FormElement>
+                                <f:label><Label text="Name"></Label></f:label>
+                                <f:fields>
+                                    <Input value="Kang"></Input>
+                                    <Input value="SK"></Input>
+                                </f:fields>
+                            </f:FormElement>
+                        </f:formElements>
+                    </f:FormContainer>
+
+                    <f:FormContainer> 
+                        <f:title><core:Title text="Container Title4"></core:Title></f:title>
+                        <f:formElements>
+                            <f:FormElement>
+                                <f:label><Label text="Name"></Label></f:label>
+                                <f:fields>
+                                    <Input value="Kang"></Input>
+                                    <Input value="SK"></Input>
+                                </f:fields>
+                            </f:FormElement>
+                        </f:formElements>
+                    </f:FormContainer>
+
+                    <f:FormContainer> 
+                        <f:title><core:Title text="Container Title5"></core:Title></f:title>
+                        <f:formElements>
+                            <f:FormElement>
+                                <f:label><Label text="Name"></Label></f:label>
+                                <f:fields>
+                                    <Input value="Kang"></Input>
+                                    <Input value="SK"></Input>
+                                </f:fields>
+                            </f:FormElement>
+                        </f:formElements>
+                    </f:FormContainer>
+
+                </f:formContainers>
+            </f:Form>
+
+
+
+
+            <!-- l:Grid 반응형 레이아웃 -->
+            <l:Grid>
+                <l:content>
+                    <Label text="lastName">
+                        <layoutData>
+                            <l:GridData span="L12 M12 S12"></l:GridData>
+                        </layoutData>
+                    </Label>
+                    <Input value="Kang">
+                        <layoutData>
+                            <l:GridData span="L12 M12 S12"></l:GridData>
+                        </layoutData>
+                    </Input>
+
+                    <Label text="firstName">
+                        <layoutData>
+                            <l:GridData span="L12 M12 S12"></l:GridData>
+                        </layoutData>
+                    </Label>
+                    <Input value="SK">
+                        <layoutData>
+                            <l:GridData span="L12 M12 S12"></l:GridData>
+                        </layoutData>
+                    </Input>
+                </l:content>
+            </l:Grid>
+
+<!-- l:HorizontalLayout 라벨, 인풋 가로 배치 레이아웃  -->
+            <l:HorizontalLayout > 
+                <l:content>
+                    <Label text="last Name"></Label>
+                    <Input id="lastdName" ></Input>
+                    <Label text="first Name"></Label>
+                    <Input id="firstName" ></Input>
+                 </l:content>
+            </l:HorizontalLayout>
+        </content>
+    </Page>
+</mvc:View>

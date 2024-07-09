@@ -1,0 +1,53 @@
+<mvc:View   controllerName="sync5.zux02ex03.controller.View1"
+            xmlns:mvc="sap.ui.core.mvc" 
+            displayBlock="true"
+            xmlns="sap.m"
+            xmlns:l="sap.ui.layout"   
+            xmlns:f="sap.ui.layout.form"      
+            xmlns:core="sap.ui.core"       
+>
+
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <VBox >
+                <core:Fragment id="idInfoView" fragmentName="sync5.zux02ex03.view.Condition" type="XML"/>
+                <!-- 작성한 Fragment파일을 가져와서 출력한다. -->
+            </VBox>
+            
+            <Panel >
+                <!-- SimpleForm은 <f:layout> <f:ResponsiveGridLayout > 레이아웃 자동 적용 -->
+                <f:SimpleForm> 
+                    <f:title><core:Title text="Student Information"></core:Title></f:title>
+                    <f:SimpleForm >
+                        <f:title><core:Title text="Kang SK Info"></core:Title></f:title>
+
+                        <f:content>
+                            <core:Title text="Basic"></core:Title>
+                                <Label text="Name "></Label>
+                                <Input value="Kang" />
+                                <Input value="SK" />
+                                <Button text="Special Info" press="onPopup"></Button>
+
+                                <Label text="Entry Date "></Label>
+                                <DatePicker />
+                                <!-- ★ 진짜 데이트 피커 안잊어먹는다. -->
+                        </f:content>
+
+                        <f:content>
+                            <core:Title text="Add Info"></core:Title>
+                                <Label text="cat "></Label>
+                                <Input value="Korean ShortHair(Mother)" />
+                                <Input value="Korean ShortHair(Son)" />
+                        </f:content>      
+                   </f:SimpleForm>
+                </f:SimpleForm> 
+            </Panel>
+           
+
+
+
+
+
+        </content>
+    </Page>
+</mvc:View>

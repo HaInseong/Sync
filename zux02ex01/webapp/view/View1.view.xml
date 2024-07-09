@@ -1,0 +1,22 @@
+<mvc:View controllerName="sync5.zux02ex01.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content >
+        
+            <Label text="Last Name"></Label>
+            <Input id="lastName" value="HA" ></Input>
+
+            <Label text="firstt Name"></Label>
+            <Input id="firstName" value="Inseong" ></Input>
+
+            <Button text="Name Mesg" press="onPrint1" ></Button>
+            <Button text="Name Text(sync)" press="onPrint2"></Button>
+
+            <FlexBox>
+               <Text id="fullName" text="테스트중"></Text>
+            </FlexBox>
+            
+        </content>
+    </Page>
+</mvc:View>

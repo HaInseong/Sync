@@ -1,0 +1,14 @@
+<core:FragmentDefinition
+    xmlns = "sap.m"
+    xmlns:core="sap.ui.core"
+>
+
+    <Label text="Frag Name"></Label>
+    <Input id="idMain" value="Frag"></Input>
+    <Button text="Frag Button" press="onFrag"></Button>
+
+</core:FragmentDefinition>
+
+<!-- sap.m 라이브러리가 가장 기본이 되도록 등록 -->
+<!-- core태그를 사용할 수 있도록 라이브러리 등록 -->
+<!-- 화면에 보여지게 해야한다. -->

@@ -1,0 +1,16 @@
+<mvc:View   controllerName="sync5.zux0203.controller.View1"
+            xmlns:mvc="sap.ui.core.mvc" 
+            displayBlock="true"
+            xmlns="sap.m"
+
+>
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Label text="Check Box"></Label>
+            <CheckBox text="Check Box Sample" id="checkBoxValue" />
+            <Button text="Click" press="onSearch"/>
+            <!-- Call Js View -->
+            <mvc:JSView viewName="sync5.zux0203.view.JsView" />
+        </content>
+    </Page>
+</mvc:View>
