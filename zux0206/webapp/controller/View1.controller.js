@@ -10,7 +10,7 @@ function (Controller, Fragment) {
 
         },
         onPopup: function() {
-            let oView = this.getView(); // View 정보를 that에 저장. 상황에 따라 this의 위치가 바뀔 수 있으니까.
+            let oView = this.getView(); // View 정보를 oView에 저장. 상황에 따라 this의 위치가 바뀔 수 있으니까.
             if(!this.getView().byId("idPopup")) { // 팝업이 존재하는지부터 id를 통해서 찾아야한다. = true이면 만들 필요가 없어용.
                 Fragment.load({ // fragment가 만들어진게 없다면 만들어주세요.
                     // 뭐를 로드할건지 많으니 객체로 지정해주세용.

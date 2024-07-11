@@ -25,7 +25,10 @@ function (Controller, JSONModel) {
         onItemClick: function(oEvent) {
             let oSource = oEvent.getSource();
             let oContext = oSource.getBindingContext();
-            // Model.getProperty(속성, getBindingContext()) = 테이블에서 원하는 속성값 빼오기
+            // alert(Model.getProperty("속성", getBindingContext())) // 테이블에서 원하는 속성값 빼오기
+            let oModel = this.getView().getModel()
+            let variable = oModel.getProperty("Name", oContext)
+            alert(variable)
             let sPath = oContext.getPath();
             alert(sPath)
         }

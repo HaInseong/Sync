@@ -1,0 +1,36 @@
+<mvc:View   controllerName="sync5.zux0221test2.controller.View1"
+            xmlns:mvc="sap.ui.core.mvc" 
+            displayBlock="true"
+            xmlns="sap.m"
+            xmlns:core="sap.ui.core"
+>
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <!-- <ComboBox id="cbSkill" items="{/empInfo}" selectionChange="onSelect"> -->
+            <ComboBox id="cbPerson" items="{/empInfo}">
+                <items>
+                    <core:Item key="{depNo}" text="{empName} - {position}" />
+                    <!-- ★ key값을 지정해둬야 컨트롤러에서 getSelectedKey()로 찾을 수 있다. -->
+                </items>
+            </ComboBox>
+            <Button text="Search" press="onSearch"></Button>
+
+            <Table items="{/empInfo}" id="empInfoTable" >
+                <columns>
+                    <Column ><header><Text text="Personal No" /></header></Column>
+                    <Column ><header><Text text="Employee Name" /></header></Column>
+                    <Column ><header><Text text="Position" /></header></Column>
+                </columns>
+                <items>
+                    <ColumnListItem >
+                        <cells>
+                            <Text text="{personNo}"></Text>
+                            <Text text="{empName}"></Text>
+                            <Text text="{position}"></Text>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

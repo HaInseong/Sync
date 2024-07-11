@@ -1,0 +1,42 @@
+<mvc:View   controllerName="sync5.zux0222.controller.View1"
+            xmlns:mvc="sap.ui.core.mvc" 
+            displayBlock="true"
+            xmlns="sap.m"
+            xmlns:t="sap.ui.table"
+>
+    <!-- ☆ xmlns:t="sap.ui.table" 이용해서 Table 만들기 (중요도 떨어짐) -->
+
+    <!-- sap.m에서 items를 사용했지만 여기에서는 rows 속성을 사용한다. -->
+    <!-- 표준이 sap.m이라서 쓸 생각은 하지말고, 세로 방향으로 테이블을 만든다는 점과 rows 속성과 rows와 관련된 함수가 따로 있다는 정도만 알면 된다. -->
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Label text="test" /><Text text="{emp>/lastName}" /> <Text text="{emp>/firstName}" />
+
+            <t:Table rows="{/erpDepSet}" selectionMode="Single" rowSelectionChange="onRowSelect">
+                <t:columns>
+                    <t:Column >
+                        <t:label><Label text="Department"></Label></t:label>
+                        <t:template><Text text="{Depno}"></Text></t:template>
+                    </t:Column>
+                    <t:Column >
+                        <t:label><Label text="Name"></Label></t:label>
+                        <t:template><Text text="{Dtext}"></Text></t:template>
+                    </t:Column>
+
+                    <!-- Secomd Model - emp> 모델 사용 -->
+                    <t:Column >
+                        <t:label><Label text="Last Name"></Label></t:label>
+                        <t:template><Text text="{emp>/lastName}"></Text></t:template>
+                    </t:Column>
+                    <t:Column >
+                        <t:label><Label text="First Name"></Label></t:label>
+                        <t:template><Text text="{emp>/firstName}"></Text></t:template>
+                    </t:Column>
+                </t:columns>
+            </t:Table>
+            <!-- Default Model + Second Model 복합 바인딩 -->
+            <Text text="Employee: {emp>/firstName} {emp>/lastName} from Department: {/erpDepSet/0/Depno} {/erpDepSet/0/Dtext}" />
+
+        </content>
+    </Page>
+</mvc:View>

@@ -27,7 +27,7 @@ function (Controller, MessageBox) {
             //     }
             // )
         },
-        onFrag: function() { // Button의 press는 Fragment를 찾지 않아도 자동으로 인식한다.
+        onFrag: function() { // ★ Button의 press는 Fragment를 찾지 않아도 자동으로 인식한다.
             alert(this.getView().byId("idMain").getValue())
             let valFragMain = this.getView().byId(sap.ui.core.Fragment.createId( //createdId 메서드로 Fragment파일에 있는 아이디에 접근해서 값을 가져온다.
             "idInfoView", "idMain"

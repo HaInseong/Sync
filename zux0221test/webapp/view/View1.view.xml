@@ -1,0 +1,44 @@
+<mvc:View   controllerName="sync5.zux0221test.controller.View1"
+            xmlns:mvc="sap.ui.core.mvc" 
+            displayBlock="true"
+            xmlns="sap.m"
+>
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Button text="Search" press="onSearch"></Button>
+            <!-- Button의 press 대신 Table에 selectionChange 속성 줘서 이벤트 값 가져와도 된다. = 컨트롤러에서 문법이 달라짐 -->
+            <Table id="depInfoTap" items="{/depInfo}" mode="SingleSelectMaster">  
+                <columns>
+                    <Column><header><Text text="Deparment" /></header></Column>
+                    <Column><header><Text text="Dep. Name" /></header></Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{depNo}"></Text>
+                            <Text text="{depName}"></Text>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+
+            <Table items="{/empInfo}" id="empInfoTable" >
+                <columns>
+                    <Column ><header><Text text="Personal No" /></header></Column>
+                    <Column ><header><Text text="Employee Name" /></header></Column>
+                    <Column ><header><Text text="Position" /></header></Column>
+                </columns>
+                <items>
+                    <ColumnListItem >
+                        <cells>
+                            <Text text="{personNo}"></Text>
+                            <Text text="{empName}"></Text>
+                            <Text text="{position}"></Text>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+
+        </content>
+    </Page>
+</mvc:View>

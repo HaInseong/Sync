@@ -1,0 +1,19 @@
+<core:FragmentDefinition
+    xmlns = "sap.m"
+    xmlns:core="sap.ui.core"
+>
+
+    <Label text="Airline"></Label>
+    <!-- Second Model에서 값 가져오기 -->
+    <ComboBox items="{/airlineSet}" id="comBoId" selectedKey="{sModel>/airlineSet/0/Carrid}">
+        <items>
+            <core:Item key="{Carrid}" text="{CarrName}" />
+        </items>
+    </ComboBox>
+
+    <FlexBox >
+        <Label text="Connection Number"></Label>
+        <Input id="inpText" value="{sModel>/flightSet/0/ConnId}" />
+        <Button text="Search" press="onSearch"></Button>
+    </FlexBox>
+</core:FragmentDefinition>

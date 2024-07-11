@@ -10,6 +10,7 @@
             <Label text="Main" ></Label>
             <Input id="idMain" value="Main"></Input>
             <Button text="Main" press="onMain"></Button>
+            
             <VBox >
                 <core:Fragment id="idInfoView" fragmentName="sync5.zux0205.view.Info" type="XML"/>
                 <!-- 작성한 Fragment파일을 가져와서 출력한다. -->

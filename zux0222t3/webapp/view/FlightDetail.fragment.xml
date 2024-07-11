@@ -1,0 +1,29 @@
+<core:FragmentDefinition
+    xmlns = "sap.m"
+    xmlns:core="sap.ui.core"
+>
+<!-- expanded="true" expandable="true"  -->
+    <Panel headerText="Flight Detail" id="panelFlightInfo" expandable="true" expanded="true">
+        <FlexBox>
+            <Label text="Airline"></Label>
+            <Input value="{Carrid}" editable="false"></Input>
+        </FlexBox>
+
+        <FlexBox>
+            <Label text="Connection Number"></Label>
+            <Input value="{ConnId}" editable="false"></Input>
+        </FlexBox>
+
+        <FlexBox>
+            <Label text="Flight Date"></Label>
+            <Input value="{Fldate}" editable="false"></Input>
+        </FlexBox>
+        
+        <FlexBox>
+            <Label text="Occupied seats"></Label>
+            <Input value="{SeatsOcc}" editable="false" description="Economy Class"></Input>
+            <Input value="{SeatsOccB}" editable="false"  description="Business Class"></Input>
+            <Input value="{SeatsOccF}" editable="false" description="First Class"></Input>
+        </FlexBox>
+    </Panel>
+</core:FragmentDefinition>

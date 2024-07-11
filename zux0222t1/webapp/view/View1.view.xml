@@ -1,0 +1,49 @@
+<mvc:View   controllerName="sync5.zux0222t1.controller.View1"
+            xmlns:mvc="sap.ui.core.mvc" 
+            displayBlock="true"
+            xmlns="sap.m"
+            xmlns:core="sap.ui.core"
+>
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Label text="Airline"></Label>
+
+            <ComboBox items="{/Airline}" id="comBoId">
+                <items>
+                    <core:Item key="{CarrId}" text="{CarrName}" />
+                </items>
+            </ComboBox>
+            <FlexBox >
+                <Label text="Connection Number"></Label>
+                <Input id="inpText" />
+                <Button text="Search" press="onSearch"></Button>
+            </FlexBox>
+            <!-- VerticalLayout, HorizontalLayout -->
+
+            <Table  items="{/FlightList}" id="airlinesList">
+                <columns>
+                    <Column><header><Text text="Airline"></Text></header></Column>
+                    <Column><header><Text text="Airline name"></Text></header></Column>
+                    <Column><header><Text text="Connection Number"></Text></header></Column>
+                    <Column><header><Text text="Departure city"></Text></header></Column>
+                    <Column><header><Text text="Arrival city"></Text></header></Column>
+                    <Column><header><Text text="Flight date"></Text></header></Column>
+                    <Column><header><Text text="Occupied seats"></Text></header></Column>   
+                </columns>
+                <items>
+                    <ColumnListItem >
+                        <cells>
+                            <Text text="{CarrId}"></Text>
+                            <Text text="{CarrName}"></Text>
+                            <Text text="{ConnId}"></Text>
+                            <Text text="{CityFrom}"></Text>
+                            <Text text="{CityTo}"></Text>
+                            <Text text="{Fldate}"></Text>
+                            <Text text="{SeatsTot}"></Text>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

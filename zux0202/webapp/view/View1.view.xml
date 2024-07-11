@@ -1,6 +1,8 @@
-<mvc:View controllerName="sync5.zux0202.controller.View1"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+<mvc:View   controllerName="sync5.zux0202.controller.View1"
+            xmlns:mvc="sap.ui.core.mvc" 
+            displayBlock="true"
+            xmlns="sap.m"
+>
     <Page id="page" title="{i18n>title}">
         <content>
             <Label text="Student Name"></Label>

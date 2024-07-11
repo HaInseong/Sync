@@ -16,11 +16,9 @@
 
 
             <!-- ComboBox 2 -->
-            <ComboBox id="cbSkill" 
-                    items="{/data}" selectionChange="onSelect">
+            <ComboBox id="cbSkill" items="{/data}" selectionChange="onSelect">
                 <items>
                     <core:Item key="{department}" text="{department}" />
-                    
                 </items>
             </ComboBox>
 

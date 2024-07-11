@@ -4,7 +4,7 @@ sap.ui.define([
 ],
 function (Controller, JSONModel) {
     "use strict";
-
+// 콤보박스 예제
     return Controller.extend("sync5.zux0212.controller.View1", {
         onInit: function () {   
             let oData = {
@@ -18,7 +18,7 @@ function (Controller, JSONModel) {
             let oData2 = {
                 data: [{ 
                         department: "HR",
-                    employees: [{
+                        employees: [{
                             name: "Mayer"},
                             {name: "Treusch"},
                             {name: "Schmitt"},
