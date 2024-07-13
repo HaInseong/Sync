@@ -3,7 +3,14 @@
     xmlns:core="sap.ui.core"
 >
 <!-- expanded="true" expandable="true"  -->
-    <Panel headerText="Flight Detail" id="panelFlightInfo" expandable="true" expanded="true">
+    <Panel headerText="Flight Detail" id="panelFlightInfo" expandable="true" expanded="false" expand="onCollapse">
+        <headerToolbar>
+            <Toolbar >
+                <content>
+                    <Title text="Flight Detail"></Title>
+                </content>
+            </Toolbar>
+        </headerToolbar>
         <FlexBox>
             <Label text="Airline"></Label>
             <Input value="{Carrid}" editable="false"></Input>

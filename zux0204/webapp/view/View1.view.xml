@@ -9,8 +9,8 @@
     <Page id="page" title="{i18n>title}">
     <!-- content 태그 안에서는 Panel, f:SimpleForm, f:Form, l:Grid, l:HorizontalLayou 등을 자유롭게 사용 가능하다. -->
         <content>
-        <!-- 패널을 쓰면 아래로 컨텐트 보이기, 감추기 기능을 쓸 수 있다. -->
-            <Panel headerText="Header Text" expanded="true" expandable="true" >
+            <!-- 패널을 쓰면 아래로 컨텐트 보이기, 감추기 기능을 쓸 수 있다. -->
+            <Panel headerText="Header Text" expanded="false" expandable="true" >
                 <headerToolbar>
                     <Toolbar>
                         <content>
@@ -24,106 +24,20 @@
                 
                 <content>
                     <Label text="Name"></Label>
-                    <Input value="Kang SK" />
+                    <Input value="Levi" />
                 </content>
             </Panel>
 
 
-<!-- SimpleForm은 <f:layout> <f:ResponsiveGridLayout ></f:ResponsiveGridLayout> </f:layout> 레이아웃 자동 적용 -->
-            <f:SimpleForm> 
-                <f:title><core:Title text="Form Title"></core:Title></f:title>
-
-                <f:content>
-                    <core:Title text="Container1"></core:Title>
-                        <Label text="Name"></Label>
-                        <Input value="Kang" />
-                        <Input value="SK" />
-
-                    <core:Title text="Container2"> </core:Title>
-                        <Label text="Email"></Label>
-                        <Input value="gkdlstjd1020@naver.com" />
-                        
-                </f:content>
-            </f:SimpleForm>
-
-<!-- f:Form 형식 -->
-            <f:Form>
-                <f:title> <core:Title text="Form Title"> </core:Title> </f:title>
-
-                <f:layout> <f:ResponsiveGridLayout ></f:ResponsiveGridLayout> </f:layout>
-
-                <f:formContainers>
-                    <f:FormContainer> 
-                        <f:title><core:Title text="Container Title"></core:Title></f:title>
-                        
-                        <f:formElements>
-                            <f:FormElement>
-                                <f:label><Label text="Name"></Label></f:label>
-                                <f:fields>
-                                    <Input value="Kang"></Input>
-                                    <Input value="SK"></Input>
-                                </f:fields>
-                            </f:FormElement>
-                        </f:formElements>
-                    </f:FormContainer>
-
-                    <f:FormContainer> 
-                        <f:title><core:Title text="Container Title2"></core:Title></f:title>
-                        <f:formElements>
-                            <f:FormElement>
-                                <f:label><Label text="Name"></Label></f:label>
-                                <f:fields>
-                                    <Input value="Kang"></Input>
-                                    <Input value="SK"></Input>
-                                </f:fields>
-                            </f:FormElement>
-                        </f:formElements>
-                    </f:FormContainer>
-
-                    <f:FormContainer> 
-                        <f:title><core:Title text="Container Title3"></core:Title></f:title>
-                        <f:formElements>
-                            <f:FormElement>
-                                <f:label><Label text="Name"></Label></f:label>
-                                <f:fields>
-                                    <Input value="Kang"></Input>
-                                    <Input value="SK"></Input>
-                                </f:fields>
-                            </f:FormElement>
-                        </f:formElements>
-                    </f:FormContainer>
-
-                    <f:FormContainer> 
-                        <f:title><core:Title text="Container Title4"></core:Title></f:title>
-                        <f:formElements>
-                            <f:FormElement>
-                                <f:label><Label text="Name"></Label></f:label>
-                                <f:fields>
-                                    <Input value="Kang"></Input>
-                                    <Input value="SK"></Input>
-                                </f:fields>
-                            </f:FormElement>
-                        </f:formElements>
-                    </f:FormContainer>
-
-                    <f:FormContainer> 
-                        <f:title><core:Title text="Container Title5"></core:Title></f:title>
-                        <f:formElements>
-                            <f:FormElement>
-                                <f:label><Label text="Name"></Label></f:label>
-                                <f:fields>
-                                    <Input value="Kang"></Input>
-                                    <Input value="SK"></Input>
-                                </f:fields>
-                            </f:FormElement>
-                        </f:formElements>
-                    </f:FormContainer>
-
-                </f:formContainers>
-            </f:Form>
-
-
-
+            <!-- l:HorizontalLayout 라벨, 인풋 가로 배치 레이아웃  -->
+            <l:HorizontalLayout > 
+                <l:content>
+                    <Label text="last Name"></Label>
+                    <Input id="lastdName" ></Input>
+                    <Label text="first Name"></Label>
+                    <Input id="firstName" ></Input>
+                 </l:content>
+            </l:HorizontalLayout>
 
             <!-- l:Grid 반응형 레이아웃 -->
             <l:Grid>
@@ -152,15 +66,99 @@
                 </l:content>
             </l:Grid>
 
-<!-- l:HorizontalLayout 라벨, 인풋 가로 배치 레이아웃  -->
-            <l:HorizontalLayout > 
-                <l:content>
-                    <Label text="last Name"></Label>
-                    <Input id="lastdName" ></Input>
-                    <Label text="first Name"></Label>
-                    <Input id="firstName" ></Input>
-                 </l:content>
-            </l:HorizontalLayout>
+            <!-- f:Form 형식 -->
+            <f:Form>
+                <f:title> <core:Title text="Form Tag Area"> </core:Title> </f:title>
+
+                <f:layout> <f:ResponsiveGridLayout ></f:ResponsiveGridLayout> </f:layout>
+
+                <f:formContainers>
+                    <f:FormContainer> 
+                        <f:title><core:Title text="Container Title"></core:Title></f:title>
+                        
+                        <f:formElements>
+                            <f:FormElement>
+                                <f:label><Label text="Name"></Label></f:label>
+                                <f:fields>
+                                    <Input value="H"></Input>
+                                    <Input value="Levi"></Input>
+                                </f:fields>
+                            </f:FormElement>
+                        </f:formElements>
+                    </f:FormContainer>
+                <l:VerticalLayout>
+                    <f:FormContainer> 
+                        <f:title><core:Title text="Container Title2"></core:Title></f:title>
+                        <f:formElements>
+                            <f:FormElement>
+                                <f:label><Label text="Name"></Label></f:label>
+                                <f:fields>
+                                    <Input value="H"></Input>
+                                    <Input value="Levi"></Input>
+                                </f:fields>
+                            </f:FormElement>
+                        </f:formElements>
+                    </f:FormContainer>
+                </l:VerticalLayout>
+
+                    <f:FormContainer> 
+                        <f:title><core:Title text="Container Title3"></core:Title></f:title>
+                        <f:formElements>
+                            <f:FormElement>
+                                <f:label><Label text="Name"></Label></f:label>
+                                <f:fields>
+                                    <Input value="H"></Input>
+                                    <Input value="Levi"></Input>
+                                </f:fields>
+                            </f:FormElement>
+                        </f:formElements>
+                    </f:FormContainer>
+
+                    <f:FormContainer> 
+                        <f:title><core:Title text="Container Title4"></core:Title></f:title>
+                        <f:formElements>
+                            <f:FormElement>
+                                <f:label><Label text="Name"></Label></f:label>
+                                <f:fields>
+                                    <Input value="H"></Input>
+                                    <Input value="Levi"></Input>
+                                </f:fields>
+                            </f:FormElement>
+                        </f:formElements>
+                    </f:FormContainer>
+
+                    <f:FormContainer> 
+                        <f:title><core:Title text="Container Title5"></core:Title></f:title>
+                        <f:formElements>
+                            <f:FormElement>
+                                <f:label><Label text="Name"></Label></f:label>
+                                <f:fields>
+                                    <Input value="H"></Input>
+                                    <Input value="Levi"></Input>
+                                </f:fields>
+                            </f:FormElement>
+                        </f:formElements>
+                    </f:FormContainer>
+
+                </f:formContainers>
+            </f:Form>
+
+            <!-- SimpleForm은 <f:layout> <f:ResponsiveGridLayout ></f:ResponsiveGridLayout> </f:layout> 레이아웃 자동 적용 -->
+            <f:SimpleForm> 
+                <f:title><core:Title text="SimpleForm Tag Area"></core:Title></f:title>
+
+                <f:content>
+                    <core:Title text="Container1"></core:Title>
+                        <Label text="Name"></Label>
+                        <Input value="H" />
+                        <Input value="Levi" />
+
+                    <core:Title text="Container2"> </core:Title>
+                        <Label text="Email"></Label>
+                        <Input value="sapcialist@gamil.com" />
+                        
+                </f:content>
+            </f:SimpleForm>
         </content>
     </Page>
 </mvc:View>

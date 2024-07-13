@@ -22,9 +22,9 @@ function (Controller) {
         onSearch: function() {
             let oChkBox = this.getView().byId("checkBoxValue");
             if( oChkBox.getSelected()) {
-                oChkBox.setText("Kang SK");
+                oChkBox.setText("체크박스에 체크 됨");
             } else {
-                oChkBox.setText("Han");
+                oChkBox.setText("체크박스에 체크되지 않음");
             }
         }
 
