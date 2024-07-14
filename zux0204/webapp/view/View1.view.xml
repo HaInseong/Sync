@@ -66,7 +66,7 @@
                 </l:content>
             </l:Grid>
 
-            <!-- f:Form 형식 -->
+           <!-- f:Form 형식 -->
             <f:Form>
                 <f:title> <core:Title text="Form Tag Area"> </core:Title> </f:title>
 
@@ -75,7 +75,6 @@
                 <f:formContainers>
                     <f:FormContainer> 
                         <f:title><core:Title text="Container Title"></core:Title></f:title>
-                        
                         <f:formElements>
                             <f:FormElement>
                                 <f:label><Label text="Name"></Label></f:label>
@@ -86,7 +85,7 @@
                             </f:FormElement>
                         </f:formElements>
                     </f:FormContainer>
-                <l:VerticalLayout>
+               
                     <f:FormContainer> 
                         <f:title><core:Title text="Container Title2"></core:Title></f:title>
                         <f:formElements>
@@ -99,7 +98,6 @@
                             </f:FormElement>
                         </f:formElements>
                     </f:FormContainer>
-                </l:VerticalLayout>
 
                     <f:FormContainer> 
                         <f:title><core:Title text="Container Title3"></core:Title></f:title>
@@ -139,11 +137,10 @@
                             </f:FormElement>
                         </f:formElements>
                     </f:FormContainer>
-
                 </f:formContainers>
             </f:Form>
 
-            <!-- SimpleForm은 <f:layout> <f:ResponsiveGridLayout ></f:ResponsiveGridLayout> </f:layout> 레이아웃 자동 적용 -->
+            <!-- ★ SimpleForm은 Form과 달리 <f:layout> <f:ResponsiveGridLayout ></f:ResponsiveGridLayout> </f:layout> 레이아웃 자동 적용 -->
             <f:SimpleForm> 
                 <f:title><core:Title text="SimpleForm Tag Area"></core:Title></f:title>
 
@@ -159,6 +156,53 @@
                         
                 </f:content>
             </f:SimpleForm>
+
+            <!-- 각각의 SimpleForm으로 컨테이너 만들 시 수직 정렬 -->
+            <!-- Container 1 -->
+            <f:SimpleForm>
+                <core:Title text="Container1"></core:Title>
+                <Label text="Last Name"/>
+                <Input value="H"/>
+                <Label text="First Name"/>
+                <Input value="Levi"/>
+            </f:SimpleForm>
+
+            <!-- Container 2 -->
+            <f:SimpleForm>
+                <core:Title text="Container2"></core:Title>
+                <Label text="Last Name"/>
+                <Input value="H"/>
+                <Label text="First Name"/>
+                <Input value="Levi"/>
+            </f:SimpleForm>
+
+            <!-- Container 3 -->
+            <f:SimpleForm>
+                <core:Title text="Container3"></core:Title>
+                <Label text="Last Name"/>
+                <Input value="H"/>
+                <Label text="First Name"/>
+                <Input value="Levi"/>
+            </f:SimpleForm>
+
+            <!-- Container 4 -->
+            <f:SimpleForm>
+                <core:Title text="Container4"></core:Title>
+                <Label text="Last Name"/>
+                <Input value="H"/>
+                <Label text="First Name"/>
+                <Input value="Levi"/>
+            </f:SimpleForm>
+
+            <!-- Container 5 -->
+            <f:SimpleForm layout="ResponsiveGridLayout">
+                <core:Title text="Container5"></core:Title>
+                <Label text="Last Name"/>
+                <Input value="H"/>
+                <Label text="First Name"/>
+                <Input value="Levi"/>
+            </f:SimpleForm>
+ 
         </content>
     </Page>
 </mvc:View>
