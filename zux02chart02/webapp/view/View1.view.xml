@@ -1,0 +1,35 @@
+<mvc:View controllerName="sync5.zux02chart02.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:viz="sap.viz.ui5.controls"    
+    xmlns:viz.data="sap.viz.ui5.data"
+    xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"    
+>
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <viz:VizFrame id="idPiechart" vizType="pie" selectData="onSelectData">
+                <viz:dataset>
+                    <viz.data:FlattenedDataset data="{/newSap}" >
+                        <viz.data:dimensions>
+                            <viz.data:DimensionDefinition name="skillName" value="{skillName}" />
+                        </viz.data:dimensions>        
+                        <viz.data:measures>        
+                            <viz.data:MeasureDefinition name="rate" value="{rate}" />
+                        </viz.data:measures>
+                    </viz.data:FlattenedDataset>
+                </viz:dataset>
+
+                <viz:feeds>
+                    <viz.feeds:FeedItem 
+                        uid="color"
+                        type="Dimension"
+                        values="skillName" />
+                    <viz.feeds:FeedItem 
+                        uid="size"
+                        type="Measure"
+                        values="rate" />    
+                </viz:feeds>
+            </viz:VizFrame>
+        </content>
+    </Page>
+</mvc:View>

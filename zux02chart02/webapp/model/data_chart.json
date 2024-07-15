@@ -1,0 +1,9 @@
+{
+	"newSap": [
+            {  "sId": "S01", "skillName": "ABAP",        "rate": "35" }, 
+			{  "sId": "S02", "skillName": "New ABAP",    "rate": "20" },
+			{  "sId": "S03", "skillName": "SAPUI5",      "rate": "20" },
+			{  "sId": "S04", "skillName": "WD4A",        "rate": "15" },
+			{  "sId": "S05", "skillName": "HANA",        "rate": "10" }
+    ]
+}
