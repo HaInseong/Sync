@@ -19,6 +19,7 @@
                     </viz.data:FlattenedDataset>
                 </viz:dataset>
 
+                <!-- viz:feeds 태그와 그 하위 태그들은 데이터 시각화 도구에서 데이터와 시각적 요소를 연결하는 역할을 합니다. -->
                 <viz:feeds>
                     <viz.feeds:FeedItem 
                         uid="color"

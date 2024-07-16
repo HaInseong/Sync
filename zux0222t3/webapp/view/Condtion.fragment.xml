@@ -8,7 +8,7 @@
     <!-- <ComboBox items="{/airlineSet}" id="comBoId" selectedKey="{sModel>/airlineSet/0/Carrid}"> 2번 문제에서 사용 -->
     <ComboBox items="{/airlineSet}" id="comBoId">
         <items>
-            <core:Item key="{Carrid}" text="{CarrName}" />
+            <core:Item key="{Carrid}" text="{Carrname}" />
         </items>
     </ComboBox>
 

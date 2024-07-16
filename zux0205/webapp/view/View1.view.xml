@@ -7,15 +7,15 @@
 
     <Page id="page" title="{i18n>title}">
         <content>
-            <Label text="Main" ></Label>
+            <Label text="Main"></Label>
             <Input id="idMain" value="Main"></Input>
             <Button text="Main" press="onMain"></Button>
             
-            <VBox >
+            <VBox>
                 <core:Fragment id="idInfoView" fragmentName="sync5.zux0205.view.Info" type="XML"/>
                 <!-- 작성한 Fragment파일을 가져와서 출력한다. -->
             </VBox>
         </content>
     </Page>
 </mvc:View>
-<!-- ★ Fragment에 id를 주면 구분자가 있기 때문에 view파일과 fragment의 id가 같아도 에러가 나지 않는다. -->
+<!-- ★ Fragment에 id를 주면 구분자가 있기 때문에 view파일과 fragment의 id가 같아도 에러가 나지 않는다. = createId로 구분하여 찾을 수 있다 -->

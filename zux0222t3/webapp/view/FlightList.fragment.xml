@@ -16,12 +16,12 @@
             <ColumnListItem press="onItemClick" type="Active" >
                 <cells>
                     <Text text="{Carrid}"></Text>
-                    <Text text="{CarrName}"></Text>
-                    <Text text="{ConnId}"></Text>
-                    <Text text="{CityFrom}"></Text>
-                    <Text text="{CityTo}"></Text>
+                    <Text text="{Carrname}"></Text>
+                    <Text text="{Connid}"></Text>
+                    <Text text="{Cityfrom}"></Text>
+                    <Text text="{Cityto}"></Text>
                     <Text text="{Fldate}"></Text>
-                    <Text text="{SeatsTot}"></Text>
+                    <Text text="{Seatstot}"></Text>
                 </cells>
             </ColumnListItem>
         </items>
